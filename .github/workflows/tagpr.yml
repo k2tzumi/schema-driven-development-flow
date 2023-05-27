@@ -36,6 +36,6 @@ jobs:
               workflow_id: 'release.yml',
               ref: refs,
               inputs: {
-                tag_version: '${{ steps.tagpr.outputs.tag }}'
+                tag: '${{ steps.tagpr.outputs.tag }}'
               },
             })
