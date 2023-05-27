@@ -1,0 +1,47 @@
+name: Upload realease slidev pdf
+on:
+  # dispatch from tagpr.yml workflow
+  workflow_dispatch:
+    inputs:
+      tag:
+        type: string
+        required: false
+        default: 'v.0.0.0'
+        description: 'Specify release tag'
+jobs:
+  upload-slidev-job:
+    name: Export slidev pdf and upload release assets job.
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm i -D playwright-chromium
+      - run: make pdf
+      - name: Upload Release Asset
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const release = await github.rest.repos.getReleaseByTag({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              tag: context.payload.inputs.tag
+            });
+            const filePath = path.join(__dirname, 'slides-export.pdf');
+            const fileContent = fs.readFileSync(filePath);
+            await github.rest.repos.uploadReleaseAsset({
+              url: release.data.upload_url,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': fileContent.length,
+              },
+              name: 'slides-export.pdf',
+              data: fileContent,
+            });
