@@ -23,6 +23,13 @@ drawings:
 transition: slide-left
 # use UnoCSS
 css: unocss
+fonts:
+  # basically the text
+  sans: 'Noto Sans JP'
+  # use with `font-serif` css class from windicss
+  serif: 'Noto Serif JP'
+  # for code blocks, inline code, etc.
+  mono: 'Noto Sans Mono'
 ---
 
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
