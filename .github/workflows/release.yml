@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+      - name: Install Google Fonts
+        run: |
+          sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
       - run: npm i -D playwright-chromium
       - run: make pdf
       - name: Upload Release Asset
