@@ -271,6 +271,14 @@ layout: fact
 視点移動が少なくて済む
 
 ---
+
+# 絶対スキーマから乖離させないマン
+
+Attributeや実際に出力されたスキーマファイルを活用してスキーマとコードを乖離させない仕組み
+
+<img class="h-80" src="/development-flow.png">
+
+---
 layout: center
 ---
 
