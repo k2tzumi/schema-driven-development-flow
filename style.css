@@ -1,0 +1,8 @@
+.slidev-page-5,.slidev-page-13 {
+
+    .slidev-vclick-hidden {
+      height: 0;
+      pointer-events: none;
+    }
+  }
+  
