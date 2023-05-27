@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.3](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.2...v0.0.3) - 2023-05-27
+- Fixing `__dirname is not defined` by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/6
+
 ## [v0.0.2](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.1...v0.0.2) - 2023-05-27
 - Fix `Unexpected inputs provided : ["tag_version"]` by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/4
 
