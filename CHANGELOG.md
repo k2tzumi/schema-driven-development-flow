@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.7](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.6...v0.0.7) - 2023-06-01
+- Fix download url by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/14
+
 ## [v0.0.6](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.5...v0.0.6) - 2023-06-01
 - Add publish command by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/12
 
