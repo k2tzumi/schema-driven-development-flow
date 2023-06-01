@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.6](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.5...v0.0.6) - 2023-06-01
+- Add publish command by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/12
+
 ## [v0.0.5](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.4...v0.0.5) - 2023-06-01
 - Deploy to GitHub Pages by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/10
 
