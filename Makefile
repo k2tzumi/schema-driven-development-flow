@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := help
 
+#REPOSITORY := $(dir $(lastword $(MAKEFILE_LIST)))
+REPOSITORY := schema-driven-development-flow
+
 .PHONY: help
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' Makefile | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
@@ -34,3 +37,13 @@ install: node_modules
 upgrade: ## Upgrades package.json
 upgrade:
 	npx -p npm-check-updates  -c "ncu -u"
+
+.PHONY: publish
+publish: ## Publish slide
+publish:
+	npx -p @slidev/cli  -c "slidev build --base /$(REPOSITORY) --out docs"
+
+.PHONY: clean
+clean: ## Delete slide
+clean:
+	rm -rf docs dist

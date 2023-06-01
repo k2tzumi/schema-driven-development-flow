@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
       - run: npm i -D playwright-chromium
-      - run: make pdf
+      - run: make publish
       - name: Upload Release Asset
         uses: actions/github-script@v6
         with:
@@ -44,7 +44,7 @@ jobs:
               repo: context.repo.repo,
               tag: context.payload.inputs.tag
             });
-            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-export.pdf');
+            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'docs/slidev-exported.pdf');
             const fileContent = fs.readFileSync(filePath);
             await github.rest.repos.uploadReleaseAsset({
               url: release.data.upload_url,
@@ -52,17 +52,16 @@ jobs:
                 'content-type': 'application/octet-stream',
                 'content-length': fileContent.length,
               },
-              name: 'slides-export.pdf',
+              name: 'slidev-exported.pdf',
               data: fileContent,
             });
-      - run: make build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './dist/.'
+          path: './docs/.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

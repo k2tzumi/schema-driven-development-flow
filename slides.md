@@ -30,6 +30,7 @@ fonts:
   serif: 'Noto Serif JP'
   # for code blocks, inline code, etc.
   mono: 'Noto Sans Mono'
+download: true
 ---
 
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
