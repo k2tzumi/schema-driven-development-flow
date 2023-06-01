@@ -40,10 +40,10 @@ upgrade:
 
 .PHONY: publish
 publish: ## Publish slide
-publish:
+publish: slides-exports.pdf
 	npx -p @slidev/cli  -c "slidev build --base /$(REPOSITORY) --out docs"
 
 .PHONY: clean
 clean: ## Delete slide
 clean:
-	rm -rf docs dist
+	rm -rf docs dist slides-exports.pdf
