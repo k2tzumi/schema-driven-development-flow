@@ -30,7 +30,7 @@ fonts:
   serif: 'Noto Serif JP'
   # for code blocks, inline code, etc.
   mono: 'Noto Sans Mono'
-download: https://github.com/k2tzumi/schema-driven-development-flow/releases/download/v0.0.7/slides-export.pdf
+download: https://github.com/k2tzumi/schema-driven-development-flow/releases/download/v0.0.8/slides-export.pdf
 ---
 
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
