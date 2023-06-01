@@ -44,7 +44,7 @@ jobs:
               repo: context.repo.repo,
               tag: context.payload.inputs.tag
             });
-            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-exports.pdf');
+            const filePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-export.pdf');
             const fileContent = fs.readFileSync(filePath);
             await github.rest.repos.uploadReleaseAsset({
               url: release.data.upload_url,
@@ -52,7 +52,7 @@ jobs:
                 'content-type': 'application/octet-stream',
                 'content-length': fileContent.length,
               },
-              name: 'slides-exports.pdf',
+              name: 'slides-export.pdf',
               data: fileContent,
             });
       - name: Setup Pages
