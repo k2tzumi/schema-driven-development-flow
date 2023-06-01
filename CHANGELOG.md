@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.5](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.4...v0.0.5) - 2023-06-01
+- Deploy to GitHub Pages by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/10
+
 ## [v0.0.4](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.3...v0.0.4) - 2023-05-27
 - Install fonts by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/8
 
