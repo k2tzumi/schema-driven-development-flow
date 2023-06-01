@@ -30,13 +30,13 @@ fonts:
   serif: 'Noto Serif JP'
   # for code blocks, inline code, etc.
   mono: 'Noto Sans Mono'
-download: https://github.com/k2tzumi/schema-driven-development-flow/releases/download/v0.0.7/slides-exports.pdf
+download: https://github.com/k2tzumi/schema-driven-development-flow/releases/download/v0.0.7/slides-export.pdf
 ---
 
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
 
 <!-- June 24, 2023.  -->
-v0.0.6
+v0.0.7
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
