@@ -1,4 +1,4 @@
-name: Upload realease slidev pdf
+name: Upload realease slidev pdf and deploying static content to GitHub Pages
 on:
   # dispatch from tagpr.yml workflow
   workflow_dispatch:
@@ -10,15 +10,22 @@ on:
         description: 'Specify release tag'
 jobs:
   upload-slidev-job:
-    name: Export slidev pdf and upload release assets job.
+    name: Export slidev pdf and upload release assets and deploying static content to GitHub Pages job.
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
-      contents: write
+      contents: write # Upload Release assets
+      pages: write
+      id-token: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - name: Install Google Fonts
         run: |
@@ -48,3 +55,14 @@ jobs:
               name: 'slides-export.pdf',
               data: fileContent,
             });
+      - run: make build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: './dist/.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
