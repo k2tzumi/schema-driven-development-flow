@@ -47,7 +47,7 @@ v0.0.9
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon:edit />
   </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
+  <a href="https://github.com/k2tzumi/schema-driven-development-flow/blob/main/slides.md" target="_blank" alt="GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -142,7 +142,7 @@ flowchart LR
 flowchart LR
     OAS[Open API Spec] -->|コード生成| Stub[Stubコード]
     Stub -->|実装| Production[実際のコード]
-    Event(*) -->|変更| OAS
+    Event(*) -.->|変更| OAS
     OAS --x |"❌ 変更済みのStubを反映することはできない"| Production
 ```
 </div></div>
@@ -469,7 +469,7 @@ layout: fact
 
 ## スキーマ≠ドキュメント
 
-スキーマはコードの一部
+スキーマはコードの一部。ドキュメンテーションツールからSpecを自動生成
 
 ---
 layout: fact
