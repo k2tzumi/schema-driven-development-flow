@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.10](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.9...v0.0.10) - 2023-06-03
+- Refine by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/20
+
 ## [v0.0.9](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.8...v0.0.9) - 2023-06-03
 - Specify download URL dynamically by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/18
 
