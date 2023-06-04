@@ -1,7 +1,6 @@
 .DEFAULT_GOAL := help
 
-#REPOSITORY := $(dir $(lastword $(MAKEFILE_LIST)))
-REPOSITORY := schema-driven-development-flow
+REPOSITORY := $(notdir $(CURDIR))
 
 .PHONY: help
 help:

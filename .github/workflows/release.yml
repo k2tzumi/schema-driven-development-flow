@@ -31,6 +31,20 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
       - run: npm i -D playwright-chromium
+      - name: Inject meta tags and/or scripts to the main index.html
+        if: ${{ secrets.GA_TRACKING_ID }}
+        run: |
+          cat <<EOF > index.html
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${{ secrets.GA_TRACKING_ID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${{ secrets.GA_TRACKING_ID }}');
+</script>
+EOF
       - name: Specify download URL
         run: |
           sed -i '2i download: https://github.com/${{ github.repository }}/releases/download/${{ github.event.inputs.tag }}/slides-export.pdf' slides.md
