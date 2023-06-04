@@ -35,7 +35,7 @@ fonts:
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
 
 <!-- June 24, 2023.  -->
-v0.0.10
+v0.0.11
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
