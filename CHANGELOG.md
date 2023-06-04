@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.12](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.11...v0.0.12) - 2023-06-04
+- Append ga4 tag by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/24
+
 ## [v0.0.11](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.10...v0.0.11) - 2023-06-04
 - Fix graph by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/22
 
