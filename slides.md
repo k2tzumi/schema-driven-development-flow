@@ -345,7 +345,7 @@ layout: center
 # スキーマ自体も静的解析すべし！
 
 ```mermaid {scale: 0.8}
-flowchart BT
+flowchart RL
     subgraph Code[実際のコード]
       direction TB
       Controller[Controllerクラス] -->|Attribute定義|Controller
