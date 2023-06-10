@@ -1,0 +1,36 @@
+{
+    "name": "sli.dev",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "make install",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+      "server": "make dev"
+    },
+    "customizations": {
+      "codespaces": {
+        "openFiles": [
+          "slides.md"
+        ]
+	},
+	"vscode": {
+		"extensions": [
+			"antfu.slidev",
+			"Vue.volar",
+			"ms-vscode-remote.remote-containers",
+			"GitHub.codespaces"
+		]
+	}
+    },
+    "portsAttributes": {
+      "3030": {
+        "label": "Application",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "forwardPorts": [3030]
+  }
+  
