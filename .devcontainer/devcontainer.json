@@ -27,8 +27,10 @@
     },
     "portsAttributes": {
       "3030": {
-        "label": "Application",
-        "onAutoForward": "openPreview"
+        "label": "Slidev",
+        "protocol": "http",
+        "onAutoForward": "openPreview",
+        "requireLocalPort": true
       }
     },
     "forwardPorts": [3030]
