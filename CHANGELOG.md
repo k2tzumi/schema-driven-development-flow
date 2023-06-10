@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.14](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.13...v0.0.14) - 2023-06-10
+- Append vite config by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/28
+
 ## [v0.0.13](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.12...v0.0.13) - 2023-06-10
 - Append dev container by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/26
 
