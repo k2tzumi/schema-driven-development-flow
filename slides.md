@@ -314,6 +314,7 @@ flowchart BT
     Code -.->|生成| Schema[スキーマファイル]
 ```
 </div></div>
+
 <div v-click="2">
 ```mermaid {scale: 0.8}
 flowchart BT
@@ -344,8 +345,8 @@ layout: center
 
 # スキーマ自体も静的解析すべし！
 
-```mermaid {scale: 0.8}
-flowchart RL
+```mermaid {scale: 0.6}
+flowchart BT
     subgraph Code[実際のコード]
       direction TB
       Controller[Controllerクラス] -->|Attribute定義|Controller
@@ -389,8 +390,8 @@ flowchart RL
 Controllerテストで [laravel-openapi-validator]() を利用してリクエストとレスポンスを検証
 
 
-```mermaid {scale: 0.8}
-flowchart RL
+```mermaid {scale: 0.6}
+flowchart BT
     Code -.->|生成| Schema[スキーマファイル]
 
     subgraph Code[実際のコード]
@@ -427,8 +428,8 @@ flowchart RL
 APIシナリオテスト（ [runn](https://github.com/k1LoW/runn) ）でユースケースを網羅的に検証
 
 
-```mermaid {scale: 0.8}
-flowchart RL
+```mermaid {scale: 0.6}
+flowchart BT
     Code -.->|生成| Schema[スキーマファイル]
 
     subgraph Code[実際のコード]
