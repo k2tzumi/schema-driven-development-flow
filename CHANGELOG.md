@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.16](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.15...v0.0.16) - 2023-06-18
+- Fix workflow yaml syntax by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/32
+
 ## [v0.0.15](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.14...v0.0.15) - 2023-06-18
 - Fix marmaid graph collapse by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/30
 
