@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.17](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.16...v0.0.17) - 2023-06-18
+- Add gtag to the end of the body tag by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/34
+
 ## [v0.0.16](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.15...v0.0.16) - 2023-06-18
 - Fix workflow yaml syntax by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/32
 
