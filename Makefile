@@ -12,7 +12,7 @@ build: dist/index.html
 
 .PHONY: pdf
 pdf: ## Export PDF
-pdf: slides-exports.pdf
+pdf: slides-export.pdf
 
 .PHONY: dev
 dev: ## Run dev server
