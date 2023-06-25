@@ -32,7 +32,7 @@ fonts:
 
 [（非公式）PHP Conference Fukuoka After Hack!!](https://fusic.connpass.com/event/274365/)  
 June 25, 2023.  
-v0.0.17
+v0.0.18
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
