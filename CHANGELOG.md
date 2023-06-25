@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.20](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.19...v0.0.20) - 2023-06-25
+- Generate ogp image by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/41
+
 ## [v0.0.19](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.18...v0.0.19) - 2023-06-25
 - Fix ogp by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/39
 
