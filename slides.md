@@ -11,11 +11,7 @@ highlighter: shiki
 # show line numbers in code blocks
 lineNumbers: false
 # some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+info: “絶対スキーマから乖離させないマン” コードからスキーマを生成するアプローチ。
 # persist drawings in exports and build
 drawings:
   persist: false
@@ -34,7 +30,8 @@ fonts:
 
 # 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編
 
-<!-- June 24, 2023.  -->
+[（非公式）PHP Conference Fukuoka After Hack!!](https://fusic.connpass.com/event/274365/)  
+June 25, 2023.  
 v0.0.17
 
 <div class="pt-12">
