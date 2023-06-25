@@ -37,7 +37,7 @@ jobs:
         if: ${{ env.ga_tracking_id != '' }}
         run: |
           cat <<EOF > index.html
-          <head prefix="og: https://ogp.me/ns#">
+          <head>
           <meta property="og:url" content="https://k2tzumi.github.io/schema-driven-development-flow" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content=" 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編" />
