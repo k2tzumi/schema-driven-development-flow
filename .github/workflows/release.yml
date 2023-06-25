@@ -37,7 +37,14 @@ jobs:
         if: ${{ env.ga_tracking_id != '' }}
         run: |
           cat <<EOF > index.html
-          <head>
+          <head prefix="og: https://ogp.me/ns#">
+          <meta property="og:url" content="https://k2tzumi.github.io/schema-driven-development-flow" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content=" 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編" />
+          <meta property="og:description" content="“絶対スキーマから乖離させないマン” コードからスキーマを生成するアプローチ" />
+          <meta property="og:site_name" content="k2tzumi.github.io" />
+          <meta property="og:image" content="https://k2tzumi.github.io/schema-driven-development-flow/development-flow.png" />
+          <link rel="canonical" href="https://k2tzumi.github.io/schema-driven-development-flow" />
           </head>
           <body>
             <!-- Google tag (gtag.js) -->
