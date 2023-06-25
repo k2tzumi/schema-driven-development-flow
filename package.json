@@ -1,6 +1,6 @@
 {
   "name": "schema-driven-development-flow",
-  "version": "v0.0.19",
+  "version": "v0.0.20",
   "engines": {
     "node": ">=14.0.0"
   },
