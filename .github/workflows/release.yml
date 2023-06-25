@@ -43,7 +43,7 @@ jobs:
           <meta property="og:title" content=" 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編" />
           <meta property="og:description" content="“絶対スキーマから乖離させないマン” コードからスキーマを生成するアプローチ" />
           <meta property="og:site_name" content="k2tzumi.github.io" />
-          <meta property="og:image" content="https://k2tzumi.github.io/schema-driven-development-flow/development-flow.png" />
+          <meta property="og:image" content="https://k2tzumi.github.io/schema-driven-development-flow/thumbnail/001.png" />
           <link rel="canonical" href="https://k2tzumi.github.io/schema-driven-development-flow" />
           </head>
           <body>
@@ -84,6 +84,17 @@ jobs:
               },
               name: 'slides-export.pdf',
               data: fileContent,
+            });
+            const noteFilePath = path.join(path.resolve(process.env.GITHUB_WORKSPACE), 'slides-export-notes.pdf');
+            const noteFileContent = fs.readFileSync(noteFilePath);
+            await github.rest.repos.uploadReleaseAsset({
+              url: release.data.upload_url,
+              headers: {
+                'content-type': 'application/octet-stream',
+                'content-length': noteFileContent.length,
+              },
+              name: 'slides-export-notes.pdf',
+              data: noteFileContent,
             });
       - name: Setup Pages
         uses: actions/configure-pages@v3

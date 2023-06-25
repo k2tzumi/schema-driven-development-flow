@@ -25,6 +25,9 @@ dist/index.html: node_modules
 slides-export.pdf: node_modules
 	npm run export
 
+slides-export-notes.pdf: node_modules
+	npm run export-notes
+
 node_modules: package.json package-lock.json
 	npm ci
 
@@ -40,10 +43,11 @@ upgrade:
 
 .PHONY: publish
 publish: ## Publish slide
-publish: slides-export.pdf
-	npx -p @slidev/cli  -c "slidev build --base /$(REPOSITORY) --out docs"
+publish: slides-export.pdf slides-export-notes.pdf
+	npx -p @slidev/cli -c "slidev build --base /$(REPOSITORY) --out docs"
+	npx -p @slidev/cli -c "slidev export --format png --output docs/thumbnail"
 
 .PHONY: clean
 clean: ## Delete slide
 clean:
-	rm -rf docs dist slides-export.pdf
+	rm -rf docs dist slides-export slides-export.pdf export-notes
