@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.21](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.20...v0.0.21) - 2023-06-26
+- Append qr by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/43
+
 ## [v0.0.20](https://github.com/k2tzumi/schema-driven-development-flow/compare/v0.0.19...v0.0.20) - 2023-06-25
 - Generate ogp image by @k2tzumi in https://github.com/k2tzumi/schema-driven-development-flow/pull/41
 
