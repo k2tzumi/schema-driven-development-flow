@@ -67,9 +67,10 @@ katzumiと申します
 
 ::left::
 
-<img src="https://pbs.twimg.com/profile_images/799890486773170176/KN4gKfS2_400x400.jpg" class="rounded-full w-40 mt-16 mr-12"/>
+<img src="https://pbs.twimg.com/profile_images/799890486773170176/KN4gKfS2_400x400.jpg" class="rounded-full w-40 mt-16 mr-12　float-left"/>  
+<img src="/twitter_qr.png" class="mt-16 ml-8 w-25"/>
 
-<logos-twitter /> [katzchum](https://twitter.com/katzchum)
+ <logos-twitter /> [katzchum](https://twitter.com/katzchum) 
 
 ::right::
 
