@@ -38,13 +38,13 @@ jobs:
         run: |
           cat <<EOF > index.html
           <head>
-          <meta property="og:url" content="https://k2tzumi.github.io/schema-driven-development-flow" />
+          <meta property="og:url" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content=" 実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編" />
+          <meta property="og:title" content="実装と乖離させないスキーマ駆動開発フロー / OpenAPI Laravel編" />
           <meta property="og:description" content="“絶対スキーマから乖離させないマン” コードからスキーマを生成するアプローチ" />
-          <meta property="og:site_name" content="k2tzumi.github.io" />
-          <meta property="og:image" content="https://k2tzumi.github.io/schema-driven-development-flow/thumbnail/001.png" />
-          <link rel="canonical" href="https://k2tzumi.github.io/schema-driven-development-flow" />
+          <meta property="og:site_name" content="${{ github.repository_owner }}.github.io" />
+          <meta property="og:image" content="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/thumbnail/001.png" />
+          <link rel="canonical" href="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" />
           </head>
           <body>
             <!-- Google tag (gtag.js) -->
